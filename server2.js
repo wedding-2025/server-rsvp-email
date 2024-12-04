@@ -2,7 +2,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import { sendEmail } from './sendEmail.js'; // Ensure this path is correct
+import { sendEmail } from './sendEmail.js';
 
 const app = express();
 const PORT = 3500;
