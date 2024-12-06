@@ -46,7 +46,7 @@ const transporter = nodemailer.createTransport({
           `
             <p>Thank you for letting us know. We're sorry to hear that you can't make it to our wedding.</p>
             <p>If anything changes, please feel free to update your RSVP.</p>
-            <p> <a href='http://manc2025.com/rsvp/rsvp-form'>Resend RSVP?</a> </p>
+            <p> <a href='http://manc2025.org/rsvp/rsvp-form'>Resend RSVP?</a> </p>
           `
           :
           `
@@ -59,10 +59,11 @@ const transporter = nodemailer.createTransport({
               <li><strong>Guests: </strong>${guestNames.map(guest => `${guest.firstName} ${guest.lastName}`).join(', ')}</li>
               <li>Guest Count: ${guestNames.length}</li>
             </ul>
-            <div style='margin-top:3px;'>
+            <div style='margin-top:3px; margin-bottom:3px'>
               <p>You can <a href="${googleCalendarLink}" target="_blank">add this event to your Google Calendar</a> to set a reminder!</p>
               <p>if you have any question, feel free to reach out.</p>
             </div>
+            <p> <a href='http://manc2025.org/rsvp/rsvp-form'>Resend RSVP?</a> </p>
           `
           }
           <p>Best regards,</p>
