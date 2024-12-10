@@ -58,11 +58,11 @@ const transporter = nodemailer.createTransport({
               <li><strong>Traditional Marriage Location:</strong> <a href='https://maps.app.goo.gl/vCcLLUoLynrBaVbc7'>Umuojogwo, Umuchu</a></li>
               <li><strong>Guests: </strong>${guestNames.map(guest => `${guest.firstName} ${guest.lastName}`).join(', ')}</li>
               <li>Guest Count: ${guestNames.length}</li>
-              <span style='margin-top=6px; margin-bottom=3px'>
+              <div style='margin-top=6px; margin-bottom=3px'>
                 <span><i>Event Timeline (WAT)</i>:</span>
                 <li>Church Wedding - <strong>10:00 AM</strong></li>
                 <li>Traditional Marriage - <strong>02:00 PM</strong></li>
-              </span>
+              </div>
             </ul>
             <div style='margin-top:3px; margin-bottom:3px'>
               <p>You can <a href="${googleCalendarLink}" target="_blank">add this event to your Google Calendar</a> to set a reminder!</p>
