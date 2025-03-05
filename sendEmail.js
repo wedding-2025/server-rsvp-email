@@ -78,7 +78,7 @@ const transporter = nodemailer.createTransport({
 
   // Sending the email
   await transporter.sendMail({
-    from: '"M & C 2025" <mj.charles2025@gmail.com>',
+    from: '"M & C 2025" <rsvp@mandc2025.org>',
     to: email,
     subject: 'Welcome to our wedding!',
     text: `Thank you for your RSVP`,
