@@ -11,8 +11,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: { 
-    user: authUser,
-    pass: authPass,
+    user: '7f188a003@smtp-brevo.com',
+    pass: 'SkYrPjUznO8fy2wJ',
   },
 });
 
@@ -78,7 +78,7 @@ const transporter = nodemailer.createTransport({
 
   // Sending the email
   await transporter.sendMail({
-    from: '"M & C 2025" <rsvp@mandc2025.org>',
+    from: 'M & C 2025 <info@mandc2025.org>',
     to: email,
     subject: 'Welcome to our wedding!',
     text: `Thank you for your RSVP`,
@@ -122,7 +122,7 @@ const transporter = nodemailer.createTransport({
 
   // Sending the email to the organizer
   await transporter.sendMail({
-    from: '"M & C 2025" <info@mandc2025.org>',
+    from: 'M & C 2025 <info@mandc2025.org>',
     to: 'mj.charles2025@gmail.com', // Organizer's email address
     subject: 'New RSVP Response',
     text: `A new RSVP from ${firstName} has been received`,
