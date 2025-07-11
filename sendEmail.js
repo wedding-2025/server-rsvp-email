@@ -122,7 +122,7 @@ const transporter = nodemailer.createTransport({
 
   // Sending the email to the organizer
   await transporter.sendMail({
-    from: '"M & C 2025" <mj.charles2025@gmail.com>',
+    from: '"M & C 2025" <info@mandc2025.org>',
     to: 'mj.charles2025@gmail.com', // Organizer's email address
     subject: 'New RSVP Response',
     text: `A new RSVP from ${firstName} has been received`,
